@@ -8,19 +8,7 @@
     <!--CSS Styles -->
     <link rel="stylesheet" href="assets/css/styles.css" />
 
-    <!-- Favicons -->
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="assets/icons/apple-touch-icon.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="assets/icons/favicon-32x32.png"
-    />
-
+    <script src="assets/js/app.js"></script>
     <!-- Animate CSS CDN -->
     <link
       rel="stylesheet"
@@ -28,173 +16,186 @@
     />
     <title>Josh Henriques</title>
   </head>
-
   <body>
-    <!-- Navbar -->
+    <!-- NAV: About, Skills, Experience, Projects, Resume, Contact -->
     <nav>
-      <h1>Josh Henriques</h1>
-      <ul class="navigation">
-        <li><a href="#about" class="nav-link">About</a></li>
-        <li><a href="#skills" class="nav-link">Skills</a></li>
-        <li><a href="#projects" class="nav-link">Projects</a></li>
-        <li><a href="#contact" class="nav-link">Contact</a></li>
-      </ul>
-      <button class="burger-menu" id="burger-menu">
-        <ion-icon class="bars" name="menu-outline"></ion-icon>
-      </button>
+      <div class = "nav-container">
+        <h2 class= "nav-h2">Josh Henriques</h2>
+        <ul>
+          <li ><a class="li-text" href="#about" class="nav-link">About</a></li>
+          <li><a class="li-text" href="#experience" class="nav-link">Experience</a></li>
+          <li><a class="li-text" href="#education" class="nav-link">Education</a></li>
+          <li><a class="li-text" href="#skills" class="nav-link">Skills</a></li>
+          <li><a class="li-text" href="#projects" class="nav-link">Projects</a></li>
+          <li><a class="li-text" href="Resume" class="nav-link">Resume</a></li>
+          <li><a class="li-text" href="#contact" class="nav-link">Contact</a></li>
+          <li id="li-linkedin" class="li-img" onmouseover="hover(this)" onmouseout="unhover(this)">
+            <a target="_blank" href="https://www.linkedin.com/in/josh-henriques/">
+              <img id="linkedin" class = "linkedin" src="assets/images/linkedin.png">
+            </a>
+          </li>
+          <li id="li-github" class="li-img" onmouseover="hover(this)" onmouseout="unhover(this)">
+            <a target="_blank" href="https://github.com/joshhenriques">
+              <img id="github" class = "github" src="assets/images/github.png">
+            </a>
+          </li>
+        </ul>
+      </div>
     </nav>
-    <!-- Hero Section -->
-    <section class="hero" id="about">
-      <img
-        src="assets/images/engineer.jpg"
-        alt="jane-doe"
-        loading="lazy"
-        class="hero-img"
-      />
-    </section>
-
-    <!-- More about -->
-    <section class="more-about">
-      <h2>About Me</h2>
-      <p>
-          My name is Josh Henriques and I am in my final year of Engineering Physics.
-          I have a passion for math and software engineering but I am really interested in 
-          Machine Learning, Artificial Intelligence and Computer Vision.
-      </p>
-      <p>
-        In my free time I enjoy going on hikes, swimming and playing video games.
-        I also enjoy working on small side projects that let me explore new topics related 
-        to software engineering.
-      </p>
-      <p>
-        I am currently looking for New Grad 2023 full time postitions or Summer 2023 internships.
-      </p>
-    </section>
-
-    <!-- Skills section -->
-    <section class="skills" id="skills">
-      <h2 class="skill-header">My Top Skills</h2>
-
-      <div class="skills-wrapper">
-        <div class="first-set animate__animated animate__pulse">
-          <img
-            src="assets/icons/python.jpg"
-            alt=""
-            loading="lazy"
-            class="icon icon-card"
-          />
-          <p> Python </p>
-          <img
-            src="assets/images/python.jpg"
-            alt=""
-            loading="lazy"
-            class="icon icon-card"
-          />
-          <img
-            src="assets/images/python.jpg"
-            alt=""
-            loading="lazy"
-            class="icon icon-card"
-          />
-        </div>
-
-        <div class="second-set animate__animated animate__pulse">
-          <img
-            src="assets/images/python.jpg"
-            alt=""
-            loading="lazy"
-            class="icon icon-card"
-          />
-          <img
-            src="assets/images/python.jpg"
-            alt=""
-            loading="lazy"
-            class="icon icon-card"
-          />
-          <img
-            src="assets/images/python.jpg"
-            alt=""
-            loading="lazy"
-            class="icon icon-card"
-          />
-        </div>
+    <!-- Main opening page -->
+    <section class = "hero">
+      <div class="hero-container">
+        <h1>Josh Henriques</h1>
+        <h4> Adaptable | Innovative | Problem Solver </h4>
+        <div class='light x1'></div>
+        <div class='light x2'></div>
+        <div class='light x3'></div>
+        <div class='light x4'></div>
+        <div class='light x5'></div>
+        <div class='light x6'></div>
+        <div class='light x7'></div>
+        <div class='light x8'></div>
+        <div class='light x9'></div>
       </div>
     </section>
 
-    <!-- Projects section -->
-    <section class="projects" id="projects">
-      <h2 class="projects-title">My Projects</h2>
-      <div class="projects-container">
-        <div class="project-container project-card">
-          <img
-            src="assets/images/LSTM.png"
-            alt="expense-tracker"
-            loading="lazy"
-            class="project-pic"
-          />
-          <h3 class="project-title">Trade Strategy Tester and Price Predictor</h3>
-          <p class="project-details">
-            Last summer I gained interest in trading stocks and wanted to utilize my skills from work 
-            to process the data  and try to predict outcomes. I decided to use PyTorch to create an LTSM model that could predict future prices from historical data.
-            I also wrote code that was able to back test various statistical strategies
-            on historical data. 
-          </p>
-          <a href="#" target="_blank" class="project-link">Check it Out</a>
+    <!-- About -->
+    <section id = "about" class = "about">
+      
+      <div class = "about-container">
+        <h1>A bit about me</h1>
+        <div class="about-img-container">
+          <img class="about-img" src="/assets/images/profileImg.png">
         </div>
-        <div class="project-container project-card">
-          <img
-            src="assets/images/python.jpg"
-            alt="netflic-clone"
-            loading="lazy"
-            class="project-pic"
-          />
-          <h3 class="project-title">Netflix Clone</h3>
-          <p class="project-details">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas
-            ratione vel inventore labore commodi modi quos culpa aut saepe!
-            Alias!
+        <div class = "about-p-container">
+          <p>I'm Josh and I am a recent Engineering Physics graduate from McMaster University.
+            I'm passionate about software engineering and am eager to make a lasting impact using 
+            skills I have aquired. 
           </p>
-          <a href="#" target="_blank" class="project-link">Check it Out</a>
-        </div>
-        <div class="project-container project-card">
-          <img
-            src="assets/images/python.jpg"
-            alt="greeny-earth"
-            loading="lazy"
-            class="project-pic"
-          />
-          <h3 class="project-title">Greeny Earth</h3>
-          <p class="project-details">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas
-            ratione vel inventore labore commodi modi quos culpa aut saepe!
-            Alias!
+          <p>
+            In my free time I enjoy playing chess, playing puzzle games like Sudoku, 
+            and going for runs. In fact, I am training for a half marathon right now! 
           </p>
-          <a href="#" target="_blank" class="project-link">Check it Out</a>
         </div>
+      </div>
+      
+    </section>
+
+    <!-- Experience -->
+    <section id = "experience" class = "experience">
+      <div class = "experience-container">
+        <h1>My Experience</h1>
+        <table>
+          <tr>
+            <td class = "experience-title">
+              <div class="experience-title-container">
+                <div>
+                  <a href="http://www.healthcare-systems.ca/" target="_blank">
+                    <img class="company-img" src="/assets/images/healthcare.png">
+                  </a>
+                </div>
+                <div>
+                  <h2>Software Engineer</h2>
+                  <h4>Healthcare Systems R&A</h4>
+                  <p>Sept 2021 - Apr 2022</p>
+                </div>
+              </div>
+            </td>
+            <td class = "experience-duties">
+              <p>In this role I conducted R&D to design and implement an algorithm for classifying
+                motorimagery EEG signals for a stroke rehabilitation interface. I aided in the designing of 
+                various data processing, feature extraction, and classification algorithms. 
+                Using Python and libraries such as tensorflow, pandas, and scipy, our team achieved an
+                80% accurracy by the end of my co-op term. Throughout this experience I enhanced my 
+                Python skills, algorithm development skills, and learned how to design various ML classification 
+                models using tensorflow.
+                </p>
+            </td>
+          </tr>
+          <tr>
+            <td class = "experience-title">
+              <div class="experience-title-container">
+                <div>
+                  <a target= "_blank" href="https://www.facebook.com/TeamMERGE/">
+                    <img class="company-img" src="/assets/images/merge.png">
+                  </a>
+                </div>
+                <div>
+                  <h2>Software Engineer</h2>
+                  <h4>MERGE</h4>
+                  <p>Aug 2020 - Sept 2021</p>
+                </div>
+              </div>
+            </td>
+            <td class = "experience-duties">
+              <p>MERGE stands for McMaster Experimental Reduced Gravity Team and my role was to cuztomize their existing
+                software to work with new video footage. The original software was designed to measure height of coloured
+                fluid in a fuel tank, and I had to customize the software to work with transparent fluid. It was programmed 
+                with Python and utilized openCV to perform the various image processing techniques. This was done to understand 
+                the effects of sloshing inside fuel tanks under zero-gravity. The research was published and you can read 
+                more about it
+                <a class="paper-link" href="https://www.sciencedirect.com/science/article/abs/pii/S2468896722000696" 
+                target="_blank">Here</a>.  
+              </p>
+            </td>
+          </tr>
+        </table>
       </div>
     </section>
 
-    <!-- Scroll to top -->
-      <i class="scroll-up" id="scroll-up"
-      ><img
-        src="assets/images/download.png"
-        class="socicon up-arrow"
-        alt="scroll-up"
-    /></i>
+    <!-- Education -->
+    <section id = "education" class = "education">
+      <div class = "education-container">
+        <h1>Education History</h1>
+        
+      </div>
+    </section>
 
-    <!-- Footer section -->
+    <!-- Skills -->
+    <section id = "skills" class = "skills">
+      <div class = "skills-container">
+        <h1>My Skills</h1>
+        <p class="skills-intro">Throughout my education, work, and extracurricular experiences I have aquired 
+          strong communication, leadership, and problem-solving skills. I have also aquired a number of technical
+        skills whicha can be seen below.</p>
+        <div class="technical-skills">
+          <div class="software">
+            <h3>Software</h3>
+            <ul class="skills-list">
+              <li><h4>Python:</h4><p>blblb</p></li>
+              <li><h4>C/C++:</h4><p>2 years</p></li>
+              <li><h4>JavaScript: </h4><p>6 years</p></li>
+              <li><h4>Python:</h4><p>6 years</p></li>
+              <li><h4>Python:</h4><p>6 years</p></li>
+            </ul>
+          </div>
+          <div class = "hardware">
+            <h3>Hardware</h3>
+            <ul class="skills-list">
+              <li><h4>Python:</h4><p>6 years</p></li>
+              <li><h4>Python:</h4><p>6 years</p></li>
+              <li><h4>Python:</h4><p>6 years</p></li>
+              <li><h4>Python:</h4><p>6 years</p></li>
+              <li><h4>Python:</h4><p>6 years</p></li>
+            </ul>
+          </div>
+        </div>
+        
+      </div>
+    </section>
+    <!-- Projects -->
+    <section id = "projects" class = "projects">
+      <div class = "projects-container">
+        <h1>Some of my projects</h1>
+      </div>
+    </section>
+    <!-- Contact -->
+    <section id = "contact" class = "contact">
+      <div class = "contact-container">
+        <h1>Contact</h1>
+        <p>joshhenriques22@gmail.com | 647-825-1132</p>
+      </div>
+    </section>
 
-    <!-- Website scripts -->
-    <script src="assets/js/app.js"></script>
-
-    <!-- Ion icons scripts -->
-    <script
-      type="module"
-      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
-    ></script>
-    <script
-      nomodule
-      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
-    ></script>
   </body>
 </html>
