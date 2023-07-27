@@ -23,10 +23,10 @@
         <h2 class= "nav-h2">Josh Henriques</h2>
         <ul>
           <li ><a class="li-text" href="#about" class="nav-link">About</a></li>
+          <li><a class="li-text" href="#projects" class="nav-link">Projects</a></li>
           <li><a class="li-text" href="#experience" class="nav-link">Experience</a></li>
           <li><a class="li-text" href="#education" class="nav-link">Education</a></li>
           <li><a class="li-text" href="#skills" class="nav-link">Skills</a></li>
-          <li><a class="li-text" href="#projects" class="nav-link">Projects</a></li>
           <li><a class="li-text" target="_blank" href="assets/other/JoshHenriquesResume.pdf">Resume</a></li>
           <li><a class="li-text" href="#contact" class="nav-link">Contact</a></li>
           <li id="li-linkedin" class="li-img" onmouseover="hover(this)" onmouseout="unhover(this)">
@@ -79,6 +79,73 @@
         </div>
       </div>
       
+    </section>
+
+    <!-- Projects -->
+    <!-- Qctrl, Song reccomender, sudoku, candu control, ultrasonic, Stock Forecaster  -->
+    <section id = "projects" class = "projects">
+      <div id = "projectsContainer" class = "projects-container">
+        <h1>Some of my projects</h1>
+        <div id="card1" class="project-card">
+          <h3>International Song Recommender</h3>
+          <img class="songRecommender" src="assets/images/songReccomender.png"/>
+          <p>Uses your spotify data to
+            recommend songs from across the world to help expose you to music you may have never heard.
+            It uses cosine similarity and filtering to determine the songs.
+          </p>
+          <p>Made with: Python, Flask, Scikit-learn, Spotipy, HTML/CSS </p>
+          <p>Check out the code <a href="https://github.com/joshhenriques/songRecommender">Here</a>!</p>
+        </div>
+        <div id="card2" class="project-card">
+          <h3>Sudoku Zen</h3>
+          <img class = "sudoku" src="assets/images/sudoku.png"/>
+          <p>Sudoku Zen is a game with three difficulties and infinite levels
+            for an unlimited relaxing puzzle solving experience
+          </p>
+          <p>Made with: C#, .NET MAUI, XAML </p>
+          <p>Check out the code <a href="https://github.com/joshhenriques/Zen-Sudoku">Here</a>!</p>
+        </div>
+        <div id="card3" class="project-card">
+          <h3>Q-CTRL</h3>
+          <img class="q-ctrl" src="assets/images/qctrl.png"/>
+          <p>Worked alongside <a href="https://qeynet.com/">QeyNET</a> to create a freespace laser
+            control system. Designed various mechanical, electrical, and software components. 
+          </p>
+          <p>Created final prototype using: Arduino, Inventor, custom built circuits, 
+            and various optical components 
+          </p>
+          <p>Check out the code <a href="https://github.com/joshhenriques/songRecommender">Here</a>!</p>
+        </div>
+        <div id="card4" class="project-card">
+          <h3>CANDU Reactor Control</h3>
+          <img class = "candu" src="assets/images/candu.png"/>
+          <p> Simulated a CANDU Reactor's power output and controlled it using a PID control system.
+          </p>
+          <p>Made with: C, MSP430 Microcontroller, Matlab, Arduino, UART Communication </p>
+          <p>Check out the code <a href="https://github.com/joshhenriques/songRecommender">Here</a>!</p>
+        </div>
+        <div id="card5" class="project-card">
+          <h3>Stock Forecaster</h3>
+          <img class="stocks" src="assets/images/LSTM.png"/>
+          <p>Created an LSTM model for predicting price trends in various stocks
+          </p>
+          <p>Made with: Python, Pytorch, Matplotlib </p>
+          <p>Check out the code <a href="https://github.com/joshhenriques/songRecommender">Here</a>!</p>
+        </div>
+        <div id="card6" class="project-card">
+          <h3>Ultrasonic Range Finder</h3>
+          <img class="ultrasonic" src="assets/images/stocks.png"/>
+          <p>Created an ultrasonic range finder capable of measuring up to one meter away. 
+          </p>
+          <p>Built with: NI Multisim, 400PT160 40kHz Ultrasonic Transducers, 
+            SN74HC112N J-K Flip-Flops, TLC555 Timers, Op Amps, and more </p>
+          <p>Check out the code <a href="https://github.com/joshhenriques/songRecommender">Here</a>!</p>
+        </div>
+        <div class="btn-container">
+          <input id="showMoreBtn" type="button" class="show-more-button" onclick= "showMore(this)" value="Show More"/>
+          <input id="showLessBtn" type="button" class="show-more-button" onclick= "showLess(this)" value="Show Less"/>
+        </div>
+      </div>
     </section>
 
     <!-- Experience -->
@@ -278,12 +345,6 @@
           </div>
         </div>
         
-      </div>
-    </section>
-    <!-- Projects -->
-    <section id = "projects" class = "projects">
-      <div class = "projects-container">
-        <h1>Some of my projects</h1>
       </div>
     </section>
     <!-- Contact -->

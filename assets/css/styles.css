@@ -8,7 +8,7 @@
   --bolder-font: 900;
   --bg-color: #37448b;
   --primary-color: #4756df;
-  --secondary-color: #6135ff;
+  --secondary-color: #FFFFFFC0;
   --primary-shadow: #8b8eaf;
   --secondary-shadow: #a17a69;
   --bottom-margin: 0.5rem;
@@ -23,7 +23,7 @@ html {
 }
 
 body{
-  color:#FFF;
+  color:#ffffffc0;
   font-family: var(--font-family);
   background-color: var(--bg-color);
   overflow-x: hidden;
@@ -297,13 +297,13 @@ left: 85%;
 
 /* About */
 .about{
-  color: #FFF;
   display: flex;
   justify-content: center;
   background-color: var(--bg-color);
   border-bottom: solid;
   border-top: solid;
   margin-top: 40px;
+  width: 100vw;
 }
 
 .about-container{
@@ -318,6 +318,7 @@ left: 85%;
 .about h1{
   width: inherit;
   text-align: center;
+  
 }
 
 .about-img-container{
@@ -341,10 +342,100 @@ left: 85%;
 
 .about p{
   margin-top: 10px;
+  color: var(--secondary-color);
 }
+
+/* Projects */
+.projects{
+  padding-top: 20px;
+  padding-bottom: 20px;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+}
+
+.projects-container{
+  background: radial-gradient(var(--bg-color),var(--primary-color));
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 10px;
+  padding-top: 30px;
+  width: 90vw;
+  border-radius: 40px;
+}
+
+.projects-container h1{
+ width: 100vw;
+ text-align: center;
+ margin-bottom: 20px;
+
+}
+
+.project-card{
+  width: 510px;
+  height: 470px;
+  border-radius: 40px;
+  border: solid;
+  background-color: #272f5f;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px;
+  gap: 10px;
+  text-align: center;
+}
+
+.songRecommender{
+  width: 400px;
+}
+
+.sudoku{
+  width: 250px;
+}
+
+.stocks{
+  width: 400px;
+}
+
+.project-card a{
+  color: #e9f1f1;
+}
+
+.btn-container{
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+
+.show-more-button{
+  width: 200px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  color: #e9f1f1;
+  font-size: large;
+  font-weight: bolder;
+  border-radius: 20px;
+  border: solid ;
+}
+
+.show-more-button:hover{
+  font-size: larger;
+  box-shadow: 5px 5px #272f5f;
+}
+
 /* Experience */
 .experience{
   border-bottom: solid;
+  border-top: solid;
+  width: 100vw;
 }
 
 .experience-container{
@@ -353,6 +444,7 @@ left: 85%;
   justify-content: center;
   padding: 20px;
   padding-top: 40px;
+  background-color: #272f5f;
 }
 
 .experience table{
@@ -408,11 +500,11 @@ left: 85%;
 
 .experience-duties p{
   text-align: left;
+  color: var(--secondary-color);
 }
 
 .paper-link{
   color:#FFF;
-  font-size: small;
 }
 
 /* Eucation */
@@ -455,10 +547,12 @@ left: 85%;
   margin-top: 10px;
   width: inherit;
   border-spacing: 1px;
+  border: solid;
+  background-color: #272f5f;
+  padding: 10px;
 }
 
 .university-contents td {
-  border: solid 1px rgb(255, 255, 255); 
   text-align: center;
   padding:3px;
   vertical-align: middle;
@@ -498,13 +592,14 @@ left: 85%;
 }
 
 .certificates a{
-  color: #FFF;
+  color: #FFFFFFC0;
 }
 
 /* Skills */
 .skills{
   background-color: var(--bg-color);
   border-bottom: solid;
+  padding: 20px;
 }
 
 .skills-container{
@@ -515,12 +610,15 @@ left: 85%;
   flex-direction: column;
   align-items: center;
   gap: 10px;
-  padding-bottom: 20px 
-
+  padding-bottom: 20px ;
+  background: radial-gradient(var(--bg-color),var(--primary-color));
+  border-radius: 40px;
+  width: 90vw;
+  margin-left: calc(5vw - 30px);
 }
 
 .skills-container h1{
-  width: 100vw;
+  width: inherit;
   text-align: center;
 }
 
@@ -545,6 +643,7 @@ left: 85%;
   flex-wrap: wrap;
   width: 30vw;
   gap: 5px;
+  
 }
 
 .skills-list h4{
@@ -556,6 +655,7 @@ left: 85%;
   width: inherit;
   display: flex;
   flex-direction: column;
+  color: #FFFFFFC0;
 }
 
 .skills-list p{
@@ -566,13 +666,27 @@ left: 85%;
 
 .hardware{
   margin-bottom: 20px;
+  background-color: #272f5f;
+  padding: 10px;
+  border: solid 1px;
+  border-radius: 10px;
 }
 
-/* Projects */
-.projects{
-  background: radial-gradient(var(--bg-color),var(--primary-color));
-  border-radius: 40px;
+.software{
+  background-color: #272f5f;
+  padding: 10px;
+  border: solid 1px;
+  border-radius: 10px;
 }
+
+.other-skills{
+  background-color: #272f5f;
+  padding: 10px;
+  border: solid 1px;
+  border-radius: 10px;
+}
+
+
 /* Contact */
 .contact{
   background-color: var(--bg-color);
@@ -581,7 +695,7 @@ left: 85%;
 .contact{
   padding: 20px;
   background-color: #FFF;
-  color: #37448b;
+  color: #272f5f;
 }
 
 .contact-container{
@@ -594,5 +708,4 @@ left: 85%;
 
 .contact a{
   color: var(--bg-color);
-  text-decoration: none;
 }
