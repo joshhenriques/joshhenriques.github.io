@@ -396,8 +396,20 @@ left: 85%;
   width: 250px;
 }
 
+
+.q-ctrl{
+  width:200px;
+}
+.candu{
+  width: 350px;
+}
+
 .stocks{
   width: 400px;
+}
+
+.ultrasonic{
+  width: 300px;
 }
 
 .project-card a{
